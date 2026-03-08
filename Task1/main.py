@@ -4,20 +4,20 @@ Entry point for the Student Record Search System.
 Demonstrates the interaction between all modules and OOP concepts.
 """
 
-from student import Student, GradStudent
 from database import StudentDatabase
+from student import Student, GradStudent
 
 
 def populate_database(db: StudentDatabase) -> None:
     """Helper function to seed the database with sample records."""
     sample_students = [
-        Student("U001", "Alice Wong",    21, "Computer Science", 3.8),
-        Student("U002", "Bob Chan",      22, "Mathematics",      3.2),
-        Student("U003", "Carol Lee",     20, "Computer Science", 3.5),
-        Student("U004", "David Ng",      23, "Physics",          2.9),
-        Student("U005", "Eva Lam",       21, "Mathematics",      3.7),
-        GradStudent("G001", "Frank Ho",  26, "Computer Science", 3.9, "Machine Learning"),
-        GradStudent("G002", "Grace Yip", 28, "Physics",          3.6, "Quantum Computing"),
+        Student("S001", "Alice Wong", 21, "Computer Science", 3.8),
+        Student("S002", "Bob Chan", 22, "Mathematics", 3.2),
+        Student("S003", "Carol Lee", 20, "Computer Science", 3.5),
+        Student("S004", "David Ng", 23, "Physics", 2.9),
+        Student("S005", "Eva Lam", 21, "Mathematics", 3.7),
+        GradStudent("S011", "Frank Ho", 26, "Computer Science", 3.9, "Machine Learning"),
+        GradStudent("S012", "Grace Yip", 28, "Physics", 3.6, "Quantum Computing"),
     ]
     print("=== Populating Database ===")
     for s in sample_students:
@@ -61,7 +61,7 @@ def main():
     demo_polymorphism(db)
 
     print("=== Remove a Record ===")
-    db.remove_student("U002")
+    db.remove_student("S002")
     print(f"  Records remaining: {db.total_count()}\n")
 
 

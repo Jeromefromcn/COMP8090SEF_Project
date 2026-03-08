@@ -25,7 +25,7 @@ def _sift_down_max(arr: list, n: int, root: int) -> None:
         root : index of the subtree root to sift down
     """
     largest = root
-    left  = 2 * root + 1
+    left = 2 * root + 1
     right = 2 * root + 2
 
     # Find the largest value among root and its children
@@ -37,7 +37,7 @@ def _sift_down_max(arr: list, n: int, root: int) -> None:
     # If root is not the largest, swap and continue sifting down
     if largest != root:
         arr[root], arr[largest] = arr[largest], arr[root]
-        _sift_down_max(arr, n, largest)   # recursive call
+        _sift_down_max(arr, n, largest)  # recursive call
 
 
 def heap_sort(arr: list) -> list:
@@ -55,7 +55,7 @@ def heap_sort(arr: list) -> list:
         >>> heap_sort([4, 10, 3, 5, 1])
         [1, 3, 4, 5, 10]
     """
-    result = list(arr)   # work on a copy
+    result = list(arr)  # work on a copy
     n = len(result)
 
     # --- Phase 1: Build Max-Heap ---
@@ -67,8 +67,8 @@ def heap_sort(arr: list) -> list:
     # Move the current root (maximum) to the end of the array,
     # then restore the heap property for the remaining elements.
     for i in range(n - 1, 0, -1):
-        result[0], result[i] = result[i], result[0]   # move max to end
-        _sift_down_max(result, i, 0)                  # re-heapify
+        result[0], result[i] = result[i], result[0]  # move max to end
+        _sift_down_max(result, i, 0)  # re-heapify
 
     return result
 

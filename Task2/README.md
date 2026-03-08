@@ -6,10 +6,10 @@ Self-study report and implementation for COMP8090SEF.
 
 ## Chosen Topics
 
-| Category | Topic |
-|---|---|
+| Category           | Topic                  |
+|--------------------|------------------------|
 | **Data Structure** | Min-Heap (Binary Heap) |
-| **Algorithm** | Heap Sort |
+| **Algorithm**      | Heap Sort              |
 
 These two topics are naturally related: Heap Sort is built on top of the Heap data structure,
 making them ideal to study together.
@@ -21,6 +21,7 @@ making them ideal to study together.
 ### What is a Heap?
 
 A **Binary Heap** is a complete binary tree that satisfies the *heap property*:
+
 - **Min-Heap**: every parent node ≤ its children → root holds the **minimum** value.
 - **Max-Heap**: every parent node ≥ its children → root holds the **maximum** value.
 
@@ -48,12 +49,12 @@ Array: [3, 4, 8, 15, 10]
 
 ### Key Operations & Time Complexity
 
-| Operation | Description | Time |
-|---|---|---|
-| `insert(v)` | Append then sift-up | O(log n) |
+| Operation       | Description                    | Time     |
+|-----------------|--------------------------------|----------|
+| `insert(v)`     | Append then sift-up            | O(log n) |
 | `extract_min()` | Swap root↔last, pop, sift-down | O(log n) |
-| `peek()` | Read `data[0]` | O(1) |
-| `heapify(list)` | Build from unsorted list | O(n) |
+| `peek()`        | Read `data[0]`                 | O(1)     |
+| `heapify(list)` | Build from unsorted list       | O(n)     |
 
 ### Applications
 
@@ -75,6 +76,7 @@ non-leaf node from bottom to top.
 
 **Phase 2 – Sort** (O(n log n))
 Repeat n−1 times:
+
 1. Swap the root (current maximum) with the last element.
 2. Shrink the heap size by 1.
 3. Sift-down the new root to restore the Max-Heap property.
@@ -96,11 +98,11 @@ Sorted: [1, 2, 4, 5, 8]  ✓
 
 ### Time & Space Complexity
 
-| Case | Time |
-|---|---|
-| Best | O(n log n) |
+| Case    | Time       |
+|---------|------------|
+| Best    | O(n log n) |
 | Average | O(n log n) |
-| Worst | O(n log n) |
+| Worst   | O(n log n) |
 
 **Space: O(1)** — sorting is done in-place with no extra array.
 

@@ -25,7 +25,7 @@ class MinHeap:
     """
 
     def __init__(self):
-        self._data: list = []   # internal array representation
+        self._data: list = []  # internal array representation
 
     # ------------------------------------------------------------------ #
     #  Public Interface                                                    #
@@ -96,7 +96,7 @@ class MinHeap:
         n = len(self._data)
         while True:
             smallest = index
-            left  = 2 * index + 1
+            left = 2 * index + 1
             right = 2 * index + 2
 
             # Find the smallest among node and its children

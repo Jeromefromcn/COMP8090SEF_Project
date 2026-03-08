@@ -9,13 +9,13 @@ records. It demonstrates all OOP concepts covered in COMP8090SEF.
 
 ## OOP Concepts Used
 
-| Concept | Where |
-|---|---|
-| **Classes & Objects** | `Person`, `Student`, `GradStudent`, `StudentDatabase` |
-| **Encapsulation** | Private attributes (`__name`, `__gpa`, etc.) with `@property` getters/setters |
-| **Inheritance** | `Student` extends `Person`; `GradStudent` extends `Student` |
-| **Polymorphism** | `get_role()` and `get_summary()` overridden at each level |
-| **Abstraction** | `Person` is an abstract base class (`ABC`) with abstract methods |
+| Concept               | Where                                                                         |
+|-----------------------|-------------------------------------------------------------------------------|
+| **Classes & Objects** | `Person`, `Student`, `GradStudent`, `StudentDatabase`                         |
+| **Encapsulation**     | Private attributes (`__name`, `__gpa`, etc.) with `@property` getters/setters |
+| **Inheritance**       | `Student` extends `Person`; `GradStudent` extends `Student`                   |
+| **Polymorphism**      | `get_role()` and `get_summary()` overridden at each level                     |
+| **Abstraction**       | `Person` is an abstract base class (`ABC`) with abstract methods              |
 
 ## File Structure
 
@@ -40,11 +40,11 @@ python main.py
 
 ```
 === Populating Database ===
-  Added: [Undergraduate] Alice Wong (ID: U001) | Major: Computer Science | GPA: 3.80
+  Added: [Undergraduate] Alice Wong (ID: S001) | Major: Computer Science | GPA: 3.80
   ...
 === Search by Major: Computer Science ===
   Found 3 record(s):
-    ID: U001 | Name: Alice Wong | Major: Computer Science | GPA: 3.80
+    ID: S001 | Name: Alice Wong | Major: Computer Science | GPA: 3.80
     ...
 ```
 

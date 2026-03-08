@@ -7,7 +7,7 @@ Demonstrates:
 - Linear search and filter-based search methods
 """
 
-from student import Student, GradStudent
+from student import Student
 
 
 class StudentDatabase:
