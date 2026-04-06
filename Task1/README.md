@@ -48,7 +48,7 @@ python main.py
     ...
 ```
 
-## Planned Improvements (Final Submission)
+## Planned Improvements
 
 - Add file persistence (save/load records from CSV)
 - Implement a sort-by-GPA feature using a sorting algorithm
