@@ -29,7 +29,7 @@ def demo_search(db: StudentDatabase) -> None:
     """Run several search demonstrations."""
 
     print("=== Search by ID ===")
-    result = db.find_by_id("G001")
+    result = db.find_by_id("S001")
     print(f"  {result}\n" if result else "  Not found.\n")
 
     print("=== Search by Name (keyword: 'lee') ===")
