@@ -21,11 +21,14 @@ records. It demonstrates all OOP concepts covered in COMP8090SEF.
 
 ```
 Task1/
-├── person.py      # Abstract base class: Person
-├── student.py     # Student and GradStudent classes
-├── database.py    # StudentDatabase with search methods
-└── main.py        # Entry point and demo
+├── person.py       # Abstract base class: Person
+├── student.py      # Student and GradStudent classes
+├── database.py     # StudentDatabase with search methods
+├── main.py         # Entry point and demo
+└── task1_video.mp4 # Intrduction Video
+
 ```
+[**Introduction video link**](https://github.com/Jeromefromcn/COMP8090SEF_Project/raw/refs/heads/main/Task1/task1_video.mp4)
 
 ## How to Run
 

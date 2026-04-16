@@ -114,10 +114,12 @@ Compared with Merge Sort (O(n) extra space), Heap Sort is more memory-efficient.
 
 ```
 Task2/
-├── heap.py        # MinHeap class
-├── heap_sort.py   # heap_sort() and heap_sort_verbose()
-└── main.py        # Demo and test cases
+├── heap.py         # MinHeap class
+├── heap_sort.py    # heap_sort() and heap_sort_verbose()
+├── heap_sort.py    # Demo and test cases
+└── task2_video.mp4 # Introduction Video
 ```
+[**Introduction video link**](https://github.com/Jeromefromcn/COMP8090SEF_Project/raw/refs/heads/main/Task2/task2_video.mp4)
 
 ## How to Run
 
